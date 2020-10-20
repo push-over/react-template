@@ -1,0 +1,19 @@
+.joke_wrapper {
+  .joke_list {
+    list-style: none;
+    .item {
+      display: flex;
+      flex-direction: column;
+      &__title {
+
+      }
+      &__description {
+        margin-bottom: 10px;
+      }
+      &__video {
+        width: 500px;
+        height: 300px;
+      }
+    }
+  }
+}

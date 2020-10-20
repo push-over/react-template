@@ -1,0 +1,164 @@
+/* Transition
+-------------------------- */
+$--all-transition:          all .3s cubic-bezier(.645,.045,.355,1)          !default;
+$--fade-transition:         opacity 300ms cubic-bezier(0.23, 1, 0.32, 1)    !default;
+$--fade-linear-transition:  opacity 200ms linear                            !default;
+$--md-fade-transition:      transform 300ms cubic-bezier(0.23, 1, 0.32, 1), opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) !default;
+$--border-transition-base:  border-color .2s cubic-bezier(.645,.045,.355,1) !default;
+$--color-transition-base:   color .2s cubic-bezier(.645,.045,.355,1)        !default;
+
+
+/* Color
+-------------------------- */
+$--color-primary: #409EFF !default;
+$--color-white:   #FFFFFF !default;
+$--color-black:   #000000 !default;
+$--color-primary-light-1: mix($--color-white, $--color-primary, 10%) !default;
+$--color-primary-light-2: mix($--color-white, $--color-primary, 20%) !default;
+$--color-primary-light-3: mix($--color-white, $--color-primary, 30%) !default;
+$--color-primary-light-4: mix($--color-white, $--color-primary, 40%) !default;
+$--color-primary-light-5: mix($--color-white, $--color-primary, 50%) !default;
+$--color-primary-light-6: mix($--color-white, $--color-primary, 60%) !default;
+$--color-primary-light-7: mix($--color-white, $--color-primary, 70%) !default;
+$--color-primary-light-8: mix($--color-white, $--color-primary, 80%) !default;
+$--color-primary-light-9: mix($--color-white, $--color-primary, 90%) !default;
+$--color-success: #67C23A !default;
+$--color-warning: #E6A23C !default;
+$--color-danger:  #F56C6C !default;
+$--color-info:    #909399 !default;
+
+$--color-success-light: mix($--color-white, $--color-success, 80%)  !default;
+$--color-warning-light: mix($--color-white, $--color-warning, 80%)  !default;
+$--color-danger-light:  mix($--color-white, $--color-danger, 80%)   !default;
+$--color-info-light:    mix($--color-white, $--color-info, 80%)     !default;
+
+$--color-success-lighter: mix($--color-white, $--color-success, 90%)  !default;
+$--color-warning-lighter: mix($--color-white, $--color-warning, 90%)  !default;
+$--color-danger-lighter:  mix($--color-white, $--color-danger, 90%)   !default;
+$--color-info-lighter:    mix($--color-white, $--color-info, 90%)     !default;
+$--color-text-primary:        #303133 !default;
+$--color-text-regular:        #606266 !default;
+$--color-text-secondary:      #909399 !default;
+$--color-text-placeholder:    #C0C4CC !default;
+$--border-color-base:         #DCDFE6 !default;
+$--border-color-light:        #E4E7ED !default;
+$--border-color-lighter:      #EBEEF5 !default;
+$--border-color-extra-light:  #F2F6FC !default;
+
+/* Background
+-------------------------- */
+$--background-color-base: #F5F7FA !default;
+
+
+/* Link
+-------------------------- */
+$--link-color:        $--color-primary-light-2  !default;
+$--link-hover-color:  $--color-primary          !default;
+
+/* Border
+-------------------------- */
+$--border-width-base:     1px    !default;
+$--border-style-base:     solid  !default;
+$--border-color-hover:    $--color-text-placeholder !default;
+$--border-base:           $--border-width-base $--border-style-base $--border-color-base !default;
+$--border-radius-base:    4px    !default;
+$--border-radius-small:   2px    !default;
+$--border-radius-circle:  100%   !default;
+
+/*Box-shadow
+-------------------------- */
+$--box-shadow-base:   0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04) !default;
+$--box-shadow-dark:   0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .12) !default;
+$--box-shadow-light:  0 2px 12px 0 rgba(0, 0, 0, 0.1)                            !default;
+
+/* Fill
+-------------------------- */
+$--fill-base: $--color-white !default;
+
+/* Typography
+-------------------------- */
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif    !default;
+
+$--font-path:                   'fonts' !default;
+$--font-size-extra-large:       20px    !default;
+$--font-size-large:             18px    !default;
+$--font-size-medium:            16px    !default;
+$--font-size-base:              14px    !default;
+$--font-size-small:             13px    !default;
+$--font-size-extra-small:       12px    !default;
+$--font-weight-primary:         500     !default;
+$--font-weight-secondary:       100     !default;
+$--font-line-height-primary:    24px    !default;
+$--font-line-height-secondary:  16px    !default;
+$--font-color-disabled-base:  #bbb    !default;
+
+/* Size
+-------------------------- */
+$--size-base: 14px !default;
+
+/* z-index
+-------------------------- */
+$--index-normal:  1     !default;
+$--index-top:     1000  !default;
+$--index-popper:  2000  !default;
+
+/* Disable base
+-------------------------- */
+$--disabled-fill-base:    $--background-color-base  !default;
+$--disabled-color-base:   $--color-text-placeholder !default;
+$--disabled-border-base:  $--border-color-light     !default;
+
+
+/* Button
+-------------------------- */
+$--button-font-size:          $--font-size-base       !default;
+$--button-font-weight:        $--font-weight-primary  !default;
+$--button-border-radius:      $--border-radius-base   !default;
+$--button-padding-vertical:   12px !default;
+$--button-padding-horizontal: 20px !default;
+
+$--button-medium-font-size:           $--font-size-base     !default;
+$--button-medium-border-radius:       $--border-radius-base !default;
+$--button-medium-padding-vertical:    10px !default;
+$--button-medium-padding-horizontal:  20px !default;
+
+$--button-small-font-size:          12px  !default;
+$--button-small-border-radius:      #{$--border-radius-base - 1} !default;
+$--button-small-padding-vertical:   9px   !default;
+$--button-small-padding-horizontal: 15px  !default;
+$--button-mini-font-size:           12px  !default;
+$--button-mini-border-radius:       #{$--border-radius-base - 1} !default;
+$--button-mini-padding-vertical:    7px   !default;
+$--button-mini-padding-horizontal:  15px  !default;
+
+$--button-default-font-color:       $--color-text-regular !default;
+$--button-default-background-color: $--color-white        !default;
+$--button-default-border-color:     $--border-color-base  !default;
+
+$--button-disabled-font-color:        $--color-text-placeholder !default;
+$--button-disabled-background-color:  $--color-white            !default;
+$--button-disabled-border-color:      $--border-color-lighter   !default;
+
+$--button-primary-border-color:     $--color-primary  !default;
+$--button-primary-font-color:       $--color-white    !default;
+$--button-primary-background-color: $--color-primary  !default;
+$--button-success-border-color:     $--color-success  !default;
+$--button-success-font-color:       $--color-white    !default;
+$--button-success-background-color: $--color-success  !default;
+$--button-warning-border-color:     $--color-warning  !default;
+$--button-warning-font-color:       $--color-white    !default;
+$--button-warning-background-color: $--color-warning  !default;
+$--button-danger-border-color:      $--color-danger   !default;
+$--button-danger-font-color:        $--color-white    !default;
+$--button-danger-background-color:  $--color-danger   !default;
+$--button-info-border-color:        $--color-info     !default;
+$--button-info-font-color:          $--color-white    !default;
+$--button-info-background-color:    $--color-info     !default;
+
+$--button-hover-tint-percent:   20% !default;
+$--button-active-shade-percent: 10% !default;
